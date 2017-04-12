@@ -1,62 +1,34 @@
 <?php
  get_header();
 ?>
-  <main class="container-fluid">
-    <div class="row">
-      <div class="col-md-8">
-        <article class="intro_article">
-          <div class="post_info">
-            <h1>Test title</h1>
 
-          </div>
-        </article>
-      </div>
-
-      <div class="col-md-4">
-        <article class="intro_article">
-          <div class="post_info">
-            <h1>Test title</h1>
-
-          </div>
-
-        </article>
-
-        <article class="intro_article">
-          <div class="post_info">
-            <h1>Test title</h1>
-
-          </div>
-
-        </article>
-
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-      </div>
-
-      <div class="col-md-6">
-
-      </div>
-
-    </div>
-    <div class="row">
-      <div class="col-md-8">
-
-      </div>
-      <div class="col-md-4">
-        <?php get_sidebar(); ?>
-      </div>
-
-    </div>
-
-  </main>
+<body>
+	<main class="container-fluid">
+		<div class="row">
+			<?php get_template_part('template-parts/content/content'); ?>
+		</div>
 
 
-<?php
- get_footer();
-?>
+		<div class="content-banner row">
+			<div class="col-md-6"><!--
+      --><div style="background-color:red; width:50%; height:180px; display:inline-block;"></div><!--
+      --><div style="background-color:blue; width:50%; height:180px; display:inline-block;"></div><!--
+      --><div style="background-color:green; width:50%; height:180px; display:inline-block;"></div><!--
+      --><div style="background-color:pink; width:50%; height:180px; display:inline-block;"></div><!--
+      --></div>
+			<div class="col-md-6"></div>
+		</div>
+
+
+		<div class="row">
+      <?php get_template_part('template-parts/content/content', 'list'); ?>
+
+
+			<div class="col-md-4">
+				<?php get_sidebar(); ?>
+			</div>
+		</div>
+	</main>
+	<?php
+	 get_footer();
+	?>
