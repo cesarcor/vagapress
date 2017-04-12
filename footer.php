@@ -1,16 +1,10 @@
 
-  <footer class="footer">
-    <div class="newsletter">
-
-      <h1 class="text-center">NEWSLETTER</h1>
-      <span></span>
-
-      <form class="" action="" method="post">
-        <input type="text" name="" value="">
-      </form>
-
+  <footer class="container-fluid footer">
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4"></div>
+      <div class="col-md-4"></div>
     </div>
-
   </footer>
   <?php wp_footer(); ?>
  </body>
