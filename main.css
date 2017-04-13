@@ -63,7 +63,7 @@ ul {
   margin: 0; }
 
 .intro-article__img_small {
-  height: 180px; }
+  height: 200px; }
 
 .intro-article__img img {
   position: absolute;
@@ -126,6 +126,8 @@ ul {
   margin: 2% 0; }
 
 .footer {
+  margin-top: 5%;
+  padding: 3%;
   background-color: #736D68; }
 
 /*# sourceMappingURL=main.css.map */
