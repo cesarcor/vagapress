@@ -46,7 +46,7 @@
 
 
    /**
-   * SIDEBARS
+   * SIDEBAR
    */
    add_action("widgets_init", "vagap_sidebars");
    function vagap_sidebars(){
@@ -54,8 +54,54 @@
        'name' => 'Homepage Sidebar',
        'id' => 'sidebar-homepage',
        'before_widget' => '<li id="%1$s" class="widget %2$s">',
-       'after_widget' => "</li>n",
+       'after_widget' => "</li>",
        'before_title' => '<h2 class="widgettitle">',
-       'after_title' => "</h2>n"
+       'after_title' => "</h2>"
      ));
   }
+
+
+  /**
+  * FOOTER WIDGET AREAS
+  */
+
+  add_action("widgets_init", "vagap_footer_widget_areas");
+  function vagap_footer_widget_areas(){
+    register_sidebar(array(
+      'name' => 'Footer Column 1',
+      'id' => 'ftr_col_1',
+      'description' => '',
+      'before_widget' => '',
+      'after_widget' => "",
+      'before_title' => '<h2 class="widgettitle">',
+      'after_title' => "</h2>"
+    ));
+
+    register_sidebar(array(
+      'name' => 'Footer Column 2',
+      'id' => 'ftr_col_2',
+      'description' => '',
+      'before_widget' => '',
+      'after_widget' => "",
+      'before_title' => '<h2 class="widgettitle">',
+      'after_title' => "</h2>"
+    ));
+
+    register_sidebar(array(
+      'name' => 'Footer Column 3',
+      'id' => 'ftr_col_3',
+      'description' => '',
+      'before_widget' => '',
+      'after_widget' => "",
+      'before_title' => '<h2 class="widgettitle">',
+      'after_title' => "</h2>"
+    ));
+
+  }
+
+
+  /**
+  * VAGAPRESS WIDGETS
+  */
+
+  require get_template_directory().'/admin/widgets/widget-category-grid.php';
