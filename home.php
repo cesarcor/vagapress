@@ -5,7 +5,7 @@
 <body>
 	<main class="container-fluid">
 		<div class="row">
-			<?php get_template_part('template-parts/content/content'); ?>
+			<?php get_template_part('template-parts/content/content-hero'); ?>
 		</div>
 
 
@@ -21,10 +21,10 @@
 
 
 		<div class="row">
-      <?php get_template_part('template-parts/content/content', 'list'); ?>
+      <?php get_template_part('template-parts/content/content-list', 'list'); ?>
 
 
-			<div class="col-md-4">
+			<div class="col-md-3">
 				<?php get_sidebar(); ?>
 			</div>
 		</div>
