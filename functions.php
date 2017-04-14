@@ -7,6 +7,8 @@
    function vagap_load_assets(){
       wp_enqueue_style('main-style', get_template_directory_uri() . '/main.css' );
       wp_enqueue_style('bootstrap-style', get_template_directory_uri() . '/assets/bootstrap-3.3.7/css/bootstrap.min.css', false, true );
+      wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
       wp_dequeue_script('jquery');
       wp_enqueue_script('jquery', get_template_directory_uri() . '/assets/jquery-3.2.0.min.js');
       wp_enqueue_script('boot-js', get_template_directory_uri() . '/assets/bootstrap-3.3.7/js/bootstrap.min.js', false, true);
@@ -31,7 +33,10 @@
    function vagap_setup() {
      add_image_size('vagap-logo', 160, 90);
      add_theme_support('custom-logo', array(
-         'size' => 'vagap-logo'
+         'width' => 227,
+         'height' => 68,
+         'flexible-width' => true,
+         'flexible-height' => true,
      ));
    }
 
@@ -53,8 +58,8 @@
      register_sidebar(array(
        'name' => 'Homepage Sidebar',
        'id' => 'sidebar-homepage',
-       'before_widget' => '<li id="%1$s" class="widget %2$s">',
-       'after_widget' => "</li>",
+       'before_widget' => '',
+       'after_widget' => "",
        'before_title' => '<h2 class="widgettitle">',
        'after_title' => "</h2>"
      ));
