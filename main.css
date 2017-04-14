@@ -24,28 +24,67 @@ ul {
 .header {
   margin-bottom: 2.5%; }
 
+.header-logo {
+  margin-top: 10px; }
+
 .header-blogname {
   color: #16446C; }
 
 /* -- NAVIGATION -- */
+.header-menu {
+  margin-top: 45px; }
+
 .header-menu ul li {
-  display: inline; }
+  position: relative;
+  display: inline-block;
+  padding-right: 15px; }
 .header-menu ul li a {
-  color: #16446C; }
+  color: #16446C;
+  font-size: 1.5rem;
+  font-weight: 300; }
 
 /* -- SEARCH -- */
+.header-search {
+  margin-top: 45px;
+  float: right; }
+
 .search-field {
   outline: none;
   border: none;
-  border-bottom: 1px solid #16446C; }
+  border-bottom: 1px solid #16446C;
+  min-width: 250px;
+  padding-left: 4px;
+  font-weight: 300; }
 
-.search-field::-webkit-input-placeholder,
-.search-field::-moz-placeholder,
-.search-field:-ms-input-placeholder,
-.search-field:-moz-placeholder {
-  color: red;
-  opacity: 0.4;
+.search-field::-webkit-input-placeholder {
+  color: #16446C;
+  opacity: 0.25;
   font-weight: 100; }
+
+/* -- SOCIAL -- */
+.vagap-social-header {
+  position: absolute;
+  right: 10px;
+  width: 140px;
+  height: 20px; }
+
+.vagap-social-header__links {
+  width: 5px;
+  padding: 5px 10px;
+  color: #FFFFFF; }
+
+.vagap-social-header__links_fb {
+  background-color: #3B5998;
+  padding: 5px 12px; }
+
+.vagap-social-header__links_tw {
+  background-color: #4099FF; }
+
+.vagap-social-header__links_in {
+  background-color: #6555C5; }
+
+.vagap-social-header__links_pi {
+  background-color: #C92228; }
 
 /*--------------------------------------------------------------
   3.0 POSTS LIST
@@ -104,6 +143,9 @@ ul {
 .list-post {
   border-bottom: 1px solid #736D68;
   padding-bottom: 2%; }
+
+.list-post-thumbnail {
+  width: 400px; }
 
 .list-post-info {
   display: inline-block; }

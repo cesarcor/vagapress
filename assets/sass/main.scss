@@ -22,6 +22,11 @@
   $defaultLimeGreen: #C7FF38;
   $defaultGreen: #54BC9B;
 
+  $facebookBlue: #3B5998;
+  $twitterBlue: #4099FF;
+  $instagramPurple: #6555C5;
+  $pinterestRed: #C92228;
+
 
   /* -- RESETS -- */
   ul{
@@ -38,38 +43,85 @@
    margin-bottom: 2.5%;
   }
 
+  .header-logo{
+    margin-top: 10px;
+  }
+
   .header-blogname{
     color: $defaultBlue;
   }
 
  /* -- NAVIGATION -- */
   .header-menu{
+    margin-top: 45px;
+  }
+
+  .header-menu{
      ul{
        li{
-         display: inline;
+         position: relative;
+         display: inline-block;
+         padding-right: 15px;
        }
 
        li a{
          color: $defaultBlue;
+         font-size: 1.5rem;
+         font-weight: 300;
        }
      }
   }
 
   /* -- SEARCH -- */
+  .header-search{
+    margin-top: 45px;
+    float: right;
+  }
+
   .search-field{
     outline: none;
     border: none;
     border-bottom: 1px solid $defaultBlue;
+    min-width: 250px;
+    padding-left: 4px;
+    font-weight: 300;
   }
 
-  .search-field::-webkit-input-placeholder,
-  .search-field::-moz-placeholder,
-  .search-field:-ms-input-placeholder,
-  .search-field:-moz-placeholder{
-    color: red;
-    opacity: 0.4;
+  .search-field::-webkit-input-placeholder{
+    color: $defaultBlue;
+    opacity: 0.25;
     font-weight: 100;
   }
+
+  /* -- SOCIAL -- */
+  .vagap-social-header{
+    position:absolute;
+    right: 10px;
+    width: 140px;
+    height: 20px;
+  }
+
+  .vagap-social-header__links{
+    width: 5px;
+    padding: 5px 10px;
+    color:#FFFFFF;
+  }
+
+  .vagap-social-header__links_fb{
+    background-color: $facebookBlue;
+    padding: 5px 12px;
+  }
+  .vagap-social-header__links_tw{
+    background-color: $twitterBlue;
+
+  }
+  .vagap-social-header__links_in{
+    background-color: $instagramPurple;
+  }
+  .vagap-social-header__links_pi{
+    background-color: $pinterestRed;
+  }
+
 
   /*--------------------------------------------------------------
     3.0 POSTS LIST
@@ -140,6 +192,10 @@
   .list-post{
     border-bottom: 1px solid $defaultDarkBrown;
     padding-bottom: 2%;
+  }
+
+  .list-post-thumbnail{
+    width:400px;
   }
 
   .list-post-info{
