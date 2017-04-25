@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-	<title><?php bloginfo('name') ?></title>
+	<title><?php echo get_the_title(); ?></title>
 	<?php wp_head(); ?>
 </head>
 
