@@ -2,7 +2,8 @@
 
 <html lang="en">
 <head>
-	<title><?php echo get_the_title(); ?></title>
+	<title><?php echo get_bloginfo('name').' - '.get_bloginfo('description'); ?></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<?php wp_head(); ?>
 </head>
 
