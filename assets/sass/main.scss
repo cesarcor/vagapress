@@ -137,6 +137,10 @@
     width:100%;
   }
 
+  #intro-article-3{
+    margin-top: 18px;
+  }
+
   .intro-article__img{
     display: inline-block;
     position: relative;
@@ -248,3 +252,7 @@
     padding: 3%;
     background-color: $defaultDarkBrown;
   }
+
+
+
+@import 'responsive';
