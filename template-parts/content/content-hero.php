@@ -23,9 +23,11 @@
 
 <div class="col-md-4">
     <?php if ( $home_posts_query->have_posts() ) : ?>
+    <?php  $iterate_hero = 0; ?>
      <?php while ( $home_posts_query->have_posts() ) : $home_posts_query->the_post(); ?>
+       <?php $iterate_hero++; ?>
       <?php if((int) $home_posts_query->current_post > 0 && (int) $home_posts_query->current_post < 3 ): ?>
-        <article class="intro-article">
+        <article id="<?php echo 'intro-article-'.$iterate_hero; ?>" class="intro-article">
             <div class="intro-article__img intro-article__img_small ">
                 <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url( 'medium' );?>" class="portrait" alt=""></a>
             </div>
