@@ -40,6 +40,8 @@
      ));
    }
 
+   require get_template_directory().'/admin/customizer/pressinator-customizer.php';
+
 
    /**
    * NAVIGATION MENU
