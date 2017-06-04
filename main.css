@@ -6,6 +6,10 @@
 3.0 POSTS LIST
 4.0 POST INDIVIDUAL
 5.0 CONTENT BANNERS
+6.0 WIDGETS
+7.0 COMMENTS
+8.0 PAGE
+9.0 FOOTER
 
 
 --------------------------------------------------------------*/
@@ -92,6 +96,9 @@ ul {
 /* -- INTRO POSTS -- */
 .intro-article {
   width: 100%; }
+
+#intro-article-3 {
+  margin-top: 18px; }
 
 .intro-article__img {
   display: inline-block;
@@ -180,5 +187,26 @@ ul {
   margin-top: 5%;
   padding: 3%;
   background-color: #736D68; }
+
+/* ======== MOBILE DEVICES ======= */
+@media only screen and (max-width: 736px) {
+  /* ---- HERO POSTS ---- */
+  .intro-article__img,
+  .intro-article__img_small {
+    height: 400px; }
+
+  .intro-article__img img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+
+  /* ---- HOME PAGE POST LIST ---- */
+  .list-post-thumbnail {
+    width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
