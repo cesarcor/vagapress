@@ -2,7 +2,6 @@
  get_header();
 ?>
 
-<body>
 	<main class="container-fluid">
 		<div class="row">
 			<?php get_template_part('template-parts/content/content-hero'); ?>
@@ -29,6 +28,8 @@
 			</div>
 		</div>
 	</main>
-	<?php
-	 get_footer();
-	?>
+
+
+<?php
+	get_footer();
+?>
