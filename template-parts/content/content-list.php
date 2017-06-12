@@ -14,8 +14,8 @@
       </div>
       <div class="col-md-6">
         <div class="list-post-info">
-          <h2 class="list-post-info__title"><?php the_title(); ?></h2>
-          <p>published by <span class="list-post-info__author"><?php the_author_posts_link(); ?></span>
+          <a href="<?php the_permalink(); ?>"><h2 class="list-post-info__title"><?php the_title(); ?></h2></a>
+          <p>published by <span class="list-post-info__author"><?php the_author_posts_link(); ?></span> -- on <span><?php echo get_the_date(); ?></span></p>
           <?php the_excerpt(); ?>
         </div>
       </div>
