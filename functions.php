@@ -51,6 +51,30 @@
      register_nav_menu('header-nav',__( 'Header Navigation' ));
    }
 
+   /**
+   * FOOTER WIDGET AREAS
+   */
+   add_action("widgets_init", "vagap_homepage_widgets_1");
+   function vagap_homepage_widgets_1(){
+     register_sidebar(array(
+       'name' => 'Homepage Widget Area 1',
+       'id' => 'hp-wa-1',
+       'before_widget' => '',
+       'after_widget' => "",
+       'before_title' => '<h2 class="widgettitle">',
+       'after_title' => "</h2>"
+     ));
+
+     register_sidebar(array(
+       'name' => 'Homepage Widget Area 2',
+       'id' => 'hp-wa-2',
+       'before_widget' => '',
+       'after_widget' => "",
+       'before_title' => '<h2 class="widgettitle">',
+       'after_title' => "</h2>"
+     ));
+  }
+
 
    /**
    * SIDEBAR
