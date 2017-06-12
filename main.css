@@ -149,13 +149,15 @@ ul {
 /* -- LIST POST -- */
 .list-post {
   border-bottom: 1px solid #736D68;
-  padding-bottom: 2%; }
+  padding-bottom: 2%;
+  margin-bottom: 25px; }
 
 .list-post-thumbnail {
-  width: 400px; }
+  width: 100%; }
 
 .list-post-info {
-  display: inline-block; }
+  display: inline-block;
+  width: 100%; }
 
 .list-post-info p {
   color: #736D68; }

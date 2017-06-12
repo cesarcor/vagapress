@@ -23,9 +23,9 @@
       <?php get_template_part('template-parts/content/content-list', 'list'); ?>
 
 
-			<div class="col-md-3">
+			<aside class="col-md-3">
 				<?php get_sidebar(); ?>
-			</div>
+			</aside>
 		</div>
 	</main>
 

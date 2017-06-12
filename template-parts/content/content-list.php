@@ -7,13 +7,19 @@
 
     <?php if((int) $home_posts_list_query->current_post >= 3): ?>
 
-    <div class="list-post">
-      <img src="<?php the_post_thumbnail_url( 'large' );?>" class="list-post-thumbnail" alt=""><!--
-      --><div class="list-post-info">
-        <h2 class="list-post-info__title"><?php the_title(); ?></h2>
-        <p>published by <span class="list-post-info__author"><?php the_author_posts_link(); ?></span>
-        <?php the_excerpt(); ?>
+    <div class="list-post row">
+      <div class="col-md-6">
+        <img src="<?php the_post_thumbnail_url( 'large' );?>" class="list-post-thumbnail" alt=""><!--
+        -->
       </div>
+      <div class="col-md-6">
+        <div class="list-post-info">
+          <h2 class="list-post-info__title"><?php the_title(); ?></h2>
+          <p>published by <span class="list-post-info__author"><?php the_author_posts_link(); ?></span>
+          <?php the_excerpt(); ?>
+        </div>
+      </div>
+
     </div>
 
     <?php endif; ?>
