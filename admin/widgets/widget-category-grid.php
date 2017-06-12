@@ -16,7 +16,22 @@
     }
 
     public function form($instance){
-      echo 'nothing for now';
+      $categories = get_categories( array(
+       'orderby' => 'name',
+       'order'   => 'ASC'
+      ) );
+
+       ?>
+       <select class="" name="">
+       <?php
+      foreach( $categories as $category ):
+       ?>
+        <option value="<?php echo $category->term_id; ?>"><?php echo $category->name; ?></option>
+       <?php
+      endforeach;
+      ?>
+      </select>
+      <?php
     }
 
 
