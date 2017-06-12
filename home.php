@@ -9,13 +9,15 @@
 
 
 		<div class="content-banner row">
-			<div class="col-md-6"><!--
-      --><div style="background-color:red; width:50%; height:180px; display:inline-block;"></div><!--
-      --><div style="background-color:blue; width:50%; height:180px; display:inline-block;"></div><!--
-      --><div style="background-color:green; width:50%; height:180px; display:inline-block;"></div><!--
-      --><div style="background-color:pink; width:50%; height:180px; display:inline-block;"></div><!--
-      --></div>
-			<div class="col-md-6"></div>
+			<div class="col-md-6">
+        <?php
+         dynamic_sidebar('hp-wa-1');
+        ?>
+			<div class="col-md-6">
+        <?php
+         dynamic_sidebar('hp-wa-2');
+        ?>
+			</div>
 		</div>
 
 
